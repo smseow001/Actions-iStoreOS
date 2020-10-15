@@ -14,5 +14,9 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-sed -i '$a src-git vssr https://github.com/jerrykuku/luci-app-vssr.git' feeds.conf.default
-sed -i '$a src-git maxminddb https://github.com/jerrykuku/lua-maxminddb.git' feeds.conf.default
+#sed -i '$a src-git vssr https://github.com/jerrykuku/luci-app-vssr.git' feeds.conf.default
+#sed -i '$a src-git maxminddb https://github.com/jerrykuku/lua-maxminddb.git' feeds.conf.default
+
+#添加自定义插件链接（自己想要什么就github里面搜索然后添加）
+git clone https://github.com/jerrykuku/luci-app-vssr.git package/diy/luci-app-vssr  #vssr出国软件
+git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
