@@ -19,4 +19,4 @@
 
 #添加自定义插件链接（自己想要什么就github里面搜索然后添加）
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/diy/luci-app-vssr  #vssr出国软件
-git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
+git clone https://github.com/jerrykuku/lua-maxminddb.git package/diy/lua-maxminddb  #git lua-maxminddb 依赖
