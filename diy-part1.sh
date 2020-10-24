@@ -17,6 +17,10 @@
 #sed -i '$a src-git vssr https://github.com/jerrykuku/luci-app-vssr.git' feeds.conf.default
 #sed -i '$a src-git maxminddb https://github.com/jerrykuku/lua-maxminddb.git' feeds.conf.default
 
+# kenzok8 packages
+sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+
 #添加自定义插件链接（自己想要什么就github里面搜索然后添加）
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/diy/luci-app-vssr  #vssr出国软件
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/diy/lua-maxminddb  #git lua-maxminddb 依赖
