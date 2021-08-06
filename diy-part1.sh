@@ -15,6 +15,8 @@
 
 # Xiaorouji Passwall
 sed -i '$a src-git xiaorouji https://github.com/xiaorouji/openwrt-passwall.git' feeds.conf.default
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git' feeds.conf.default
+sed -i '$a src-git packges https://github.com/Myoko/openwrt-packages.git' feeds.conf.default
 
 # Add a feed source
 #sed -i '$a src-git vssr https://github.com/jerrykuku/luci-app-vssr.git' feeds.conf.default
