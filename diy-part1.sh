@@ -14,9 +14,13 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Xiaorouji Passwall
-sed -i '$a src-git xiaorouji https://github.com/xiaorouji/openwrt-passwall.git' feeds.conf.default
+sed -i 'src-git passwall https://github.com/xiaorouji/openwrt-passwall;packages' feeds.conf.default
+sed -i 'src-git passwall1 https://github.com/xiaorouji/openwrt-passwall;luci' feeds.conf.default
+sed -i 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2;main' feeds.conf.default
 sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git' feeds.conf.default
 sed -i '$a src-git packges https://github.com/Myoko/openwrt-packages.git' feeds.conf.default
+git clone https://github.com/thinktip/luci-theme-neobird package/luci-theme-neobird
+git clone https://github.com/kiddin9/luci-app-dnsfilter package/luci-app-dnsfilter
 
 # Add a feed source
 #sed -i '$a src-git vssr https://github.com/jerrykuku/luci-app-vssr.git' feeds.conf.default
